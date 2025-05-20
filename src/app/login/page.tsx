@@ -6,9 +6,9 @@ import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { useRouter, useSearchParams } from "next/navigation"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+import { Button } from "@/components/ui/organisms/button"
+import { Input } from "@/components/ui/organisms/input"
+import { Label } from "@/components/ui/organisms/label"
 import { EyeIcon, EyeOffIcon } from "lucide-react"
 
 export default function Login() {
