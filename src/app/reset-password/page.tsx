@@ -53,7 +53,7 @@ export default function ResetPassword() {
         <div className="w-full text-center mb-8">
           <h1 className="text-2xl font-medium mb-2">Reset Your Password</h1>
           <p className="text-gray-600 mb-6">
-            Enter your email address and we'll send you a code to reset your password.
+            Enter your email address and we&apos;ll send you a code to reset your password.
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-4 text-left">

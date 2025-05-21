@@ -78,7 +78,7 @@ export default function Home() {
             Tech Skills Made Simple for Everyone.
           </h1>
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-            Whether you're starting from scratch or picking it back up, we make software engineering and design feel
+            Whether you&apos;re starting from scratch or picking it back up, we make software engineering and design feel
             doable.
           </p>
 
