@@ -73,7 +73,7 @@ export default function CheckInbox() {
           <h1 className="text-2xl font-medium mb-2">Check your inbox!</h1>
           <p className="text-gray-600 mb-1">Enter the 6-digit code we just sent to {email}.</p>
           <p className="text-gray-600 mb-6">
-            Didn't get it? Check your spam or{" "}
+            Didn&apos;t get it? Check your spam or{" "}
             <button
               onClick={handleResendCode}
               disabled={isResending}
