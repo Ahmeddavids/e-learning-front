@@ -6,8 +6,8 @@ import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { useRouter, useSearchParams } from "next/navigation"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
+import { Button } from "@/components/ui/organisms/button"
+import { Input } from "@/components/ui/organisms/input"
 
 export default function VerifyEmail() {
   const router = useRouter()

@@ -6,9 +6,9 @@ import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { useRouter, useSearchParams } from "next/navigation"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+import { Button } from "@/components/ui/organisms/button"
+import { Input } from "@/components/ui/organisms/input"
+import { Label } from "@/components/ui/organisms/label"
 import { EyeIcon, EyeOffIcon } from "lucide-react"
 
 export default function SetPassword() {
@@ -28,7 +28,7 @@ export default function SetPassword() {
     e.preventDefault()
     setError("")
 
-    
+
     if (password.length < 8) {
       setError("Password must be at least 8 characters long")
       return

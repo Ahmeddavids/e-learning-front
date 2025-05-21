@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/organisms/button"
 import { Facebook, Twitter, Linkedin } from "lucide-react"
 
 export default function Home() {
@@ -84,7 +84,7 @@ export default function Home() {
 
           <div className="flex gap-4 justify-center">
             <Button className="bg-[#FB8500] hover:bg-orange-600 text-white px-8 py-2 rounded">
-            <Link href="/login">Log In</Link>
+              <Link href="/login">Log In</Link>
             </Button>
             <Button
               variant="outline"
