@@ -1,7 +1,9 @@
 "use client";
 
-import { MainContent } from "@/components/ui/organisms/main-content";
-import { RightPanel } from "@/components/ui/organisms/right-panel";
+import { MainContent } from "@/components/ui/organisms/dashboard/main-content";
+import { RightPanel } from "@/components/ui/organisms/dashboard/right-panel";
+
+
 
 export default function HomePage() {
   return (

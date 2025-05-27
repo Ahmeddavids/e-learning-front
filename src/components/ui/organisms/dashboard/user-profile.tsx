@@ -1,13 +1,15 @@
 import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import { User, FileText, Moon, LogOut } from "lucide-react";
-import { ToggleSwitch } from "./toggle";
+import { ToggleSwitch } from "../toggle";
+import Certificate from "./certificate-modal";
+import AccountProfile from "./account";
 
 export const UserProfile = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
-  const router = useRouter();
+  const [showCertificateModal, setShowCertificateModal] = useState(false);
+  const [showAccountModal, setShowAccountModal] = useState(false);
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
@@ -18,11 +20,6 @@ export const UserProfile = () => {
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
-
-  const handleNavigate = (path: string) => {
-    setIsOpen(false);
-    router.push(path);
-  };
 
   return (
     <div
@@ -58,7 +55,7 @@ export const UserProfile = () => {
           </div>
 
           <div
-            onClick={() => handleNavigate("/account")}
+            onClick={() => setShowAccountModal(true)}
             className="cursor-pointer px-4 py-3 hover:bg-gray-50 flex items-center transition-colors"
           >
             <User className="h-5 w-5 mr-3" />
@@ -66,8 +63,8 @@ export const UserProfile = () => {
           </div>
 
           <div
-             onClick={() => handleNavigate("/certificate")}
             className="cursor-pointer px-4 py-3 hover:bg-gray-50 flex items-center transition-colors"
+            onClick={() => setShowCertificateModal(true)}
           >
             <FileText className="h-5 w-5 mr-3" />
             Certificate
@@ -77,7 +74,7 @@ export const UserProfile = () => {
             <div className="flex items-center">
               <Moon className="h-5 w-5 mr-3" />
               <span>Dark mode</span>
-            </div>x
+            </div>
             <ToggleSwitch defaultChecked />
           </div>
 
@@ -87,6 +84,14 @@ export const UserProfile = () => {
           </div>
         </div>
       )}
+      <Certificate
+        isOpen={showCertificateModal}
+        onClose={() => setShowCertificateModal(false)}
+      />
+      <AccountProfile
+        isOpen={showAccountModal}
+        onClose={() => setShowAccountModal(false)}
+      />
     </div>
   );
 };

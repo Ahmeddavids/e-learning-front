@@ -4,7 +4,7 @@ import { Menu, Bell } from "lucide-react";
 
 import Sidebar from "@/components/ui/organisms/sidebar";
 import { sidebarSections } from "@/components/ui/molecules/SidebarList";
-import { UserProfile } from "@/components/ui/organisms/user-profile";
+import { UserProfile } from "@/components/ui/organisms/dashboard/user-profile";
 
 interface DashboardLayoutProps {
   children: ReactNode;
@@ -50,9 +50,9 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
               </div>
 
               <div className="relative">
-                <button className="flex items-center space-x-2 focus:outline-none">
+                <span className="flex items-center space-x-2 focus:outline-none">
                   <UserProfile />
-                </button>
+                </span>
               </div>
             </div>
           </div>
