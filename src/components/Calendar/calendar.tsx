@@ -1,8 +1,8 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import CalendarHeader from "./calendar-header";
 import EventCard from "./event-card";
-import { getEventsForDay } from "@/types/calendar";
 import { useCalendarWeek } from "@/hooks/useCalendarWeek";
+import { getEventsForDay } from "@/util";
 
 const Calendar = () => {
   const { days, weekLabel, navigateWeek } = useCalendarWeek();
@@ -12,7 +12,6 @@ const Calendar = () => {
       <div className="bg-white rounded-2xl shadow-sm p-4 sm:p-8">
         <CalendarHeader />
 
-        {/* Week Navigation */}
         <div className="flex items-center justify-center mb-6 sm:mb-8 mt-6 sm:mt-8">
           <button
             onClick={() => navigateWeek("prev")}
@@ -33,14 +32,12 @@ const Calendar = () => {
           </button>
         </div>
 
-        {/* Calendar Grid -- Days of the Week */}
         <div className="grid grid-cols-1 sm:grid-cols-7 gap-4 ">
           {days.map((day) => (
             <div
               key={day.number}
               className="min-h-[120px] sm:min-h-[400px] p-2 border-l border-gray-200 "
             >
-              {/* Day Header */}
               <div className="mb-3 sm:mb-4 border-b border-gray-200">
                 <div
                   className={`
@@ -56,7 +53,6 @@ const Calendar = () => {
                 </div>
               </div>
 
-              {/* Events for this day */}
               <div className="space-y-2 sm:space-y-3">
                 {getEventsForDay(day.date).map((event) => (
                   <EventCard key={event.id} event={event} />
