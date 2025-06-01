@@ -1,5 +1,5 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import CalendarHeader from "./calendar-header";
+import CalendarHeader from "../ui/molecules/calendar-header";
 import EventCard from "./event-card";
 import { useCalendarWeek } from "@/hooks/useCalendarWeek";
 import { getEventsForDay } from "@/util";
@@ -67,3 +67,4 @@ const Calendar = () => {
 };
 
 export default Calendar;
+
