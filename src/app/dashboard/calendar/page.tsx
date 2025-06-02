@@ -1,9 +1,9 @@
-'use client';
+"use client";
+
+import Calendar from "@/components/Calendar/calendar";
 
 export default function CalenderPage() {
-    return (
-        <div>
-            <p>Calender component goes here </p>
-        </div>
-    );
+  return (
+      <Calendar />
+  );
 }
