@@ -10,7 +10,7 @@ export const sidebarSections = [
     {
         title: 'LEARN',
         items: [
-            { name: 'Live Class', href: '/live-class', icon: Video, badge: 'new' },
+            { name: 'Live Class', href: '/dashboard/live-class', icon: Video, badge: 'new' },
             { name: 'Learning path', href: '/learning-path', icon: Compass },
             { name: 'Assessment', href: '/assessment', icon: BookOpenCheck },
         ]
