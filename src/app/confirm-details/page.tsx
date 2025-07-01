@@ -22,7 +22,6 @@ export default function ConfirmDetails() {
     getSingleUser(email);
   }, []);
 
-  console.log(user);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
