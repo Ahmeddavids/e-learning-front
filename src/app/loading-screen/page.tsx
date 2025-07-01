@@ -23,7 +23,7 @@ export default function LoadingScreen() {
     }, 2000)
 
     const redirectTimeout = setTimeout(() => {
-      router.push("/dashboard")
+      router.push("/login")
     }, 6000)
 
     return () => {
