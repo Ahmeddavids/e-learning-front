@@ -10,16 +10,16 @@ export const sidebarSections = [
     {
         title: 'LEARN',
         items: [
-            { name: 'Live Class', href: '/live-class', icon: Video, badge: 'new' },
-            { name: 'Learning path', href: '/learning-path', icon: Compass },
-            { name: 'Assessment', href: '/assessment', icon: BookOpenCheck },
+            { name: 'Live Class', href: '/dashboard/live-class', icon: Video, badge: 'new' },
+            { name: 'Learning path', href: '/dashboard/learning-path', icon: Compass },
+            { name: 'Assessment', href: '/dashboard/assessment', icon: BookOpenCheck },
         ]
     },
     {
         title: 'GROW',
         items: [
-            { name: 'Leader board', href: '/leaderboard', icon: Trophy },
-            { name: 'Community', href: '/community', icon: MessageCircle },
+            { name: 'Leader board', href: '/dashboard/leaderboard', icon: Trophy },
+            { name: 'Community', href: '/dashboard/community', icon: MessageCircle },
         ]
     }
 ];
