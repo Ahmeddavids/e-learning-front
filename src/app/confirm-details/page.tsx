@@ -20,7 +20,7 @@ export default function ConfirmDetails() {
 
   useEffect(() => {
     getSingleUser(email);
-  }, []);
+  }, [email, getSingleUser]);
 
 
   const handleSubmit = async (e: React.FormEvent) => {

@@ -13,7 +13,7 @@ const Page = () => {
           Live Class
         </h1>
         <p className="text-[#525454] text-lg sm:text-xl font-normal">
-          Here you can join your live section, see what's next, or replay what you missed
+          Here you can join your live section, see what&apos;s next, or replay what you missed
         </p>
 
         <div className="mt-10 w-full">

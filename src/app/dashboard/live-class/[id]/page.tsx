@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 // import { useRouter } from 'next/router';
 import { useParams } from 'next/navigation';
+import Image from 'next/image';
 
 const RecordedDetails = () => {
    const params = useParams();
@@ -61,7 +62,7 @@ const RecordedDetails = () => {
               className="cursor-pointer bg-white rounded-xl shadow-sm p-3 hover:shadow-md transition"
             >
               <div className="relative w-full aspect-square sm:aspect-video bg-gray-300 rounded-lg overflow-hidden">
-                <img
+                <Image
                   src={video.thumbnail}
                   alt={video.title}
                   className="w-full h-full object-cover"

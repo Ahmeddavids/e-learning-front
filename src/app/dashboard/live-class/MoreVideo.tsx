@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const allCourses = Array(4).fill({
@@ -12,7 +13,7 @@ const MoreVideo = () => {
         {allCourses.map((course, index) => (
           <div key={index} className="bg-white rounded-xl shadow-sm p-3 cursor-pointer">
             <div className="relative w-full aspect-square sm:aspect-video bg-gray-300 rounded-lg overflow-hidden">
-              <img
+              <Image
                 src={course.thumbnail}
                 alt={course.title}
                 className="w-full h-full object-cover"

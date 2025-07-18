@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const LiveClass = () => {
@@ -10,7 +11,7 @@ const LiveClass = () => {
                 </p>
               </div>
               <div className="flex justify-center items-center h-full">
-                <img
+                <Image
                   src="/icons/FrameImg.png"
                   alt="Live Class Thumbnail"
                   className="w-full h-auto object-cover rounded-md"
