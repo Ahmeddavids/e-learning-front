@@ -22,7 +22,6 @@ export default function ConfirmDetails() {
     getSingleUser(email);
   }, [email, getSingleUser]);
 
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -59,6 +58,7 @@ export default function ConfirmDetails() {
                   type="text"
                   value={user?.firstname}
                   readOnly
+                  className="bg-gray-100"
                 />
               </div>
 
@@ -69,13 +69,20 @@ export default function ConfirmDetails() {
                   type="text"
                   value={user?.lastname}
                   readOnly
+                  className="bg-gray-100"
                 />
               </div>
             </div>
 
             <div className="space-y-2">
               <Label htmlFor="email">Email</Label>
-              <Input id="email" type="email" value={user?.email} readOnly />
+              <Input
+                id="email"
+                type="email"
+                value={user?.email}
+                className="bg-gray-100"
+                readOnly
+              />
             </div>
 
             <Button
