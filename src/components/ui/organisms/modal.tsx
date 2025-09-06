@@ -47,12 +47,31 @@ export default function Modal({
     <div
       ref={overlayRef}
       onClick={handleOverlayClick}
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black opacity-90 backdrop-blur-sm"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm"
     >
       <div
-        className={`bg-white rounded-2xl shadow-lg ${sizeClasses[size]} p-6 animate-fadeIn scale-95 transition-all`}
+        className={`bg-white rounded-2xl shadow-lg ${sizeClasses[size]} p-6 animate-fadeIn scale-95 transition-all relative`}
       >
-        {title && <h2 className="text-xl font-semibold mb-4">{title}</h2>}
+        <button
+          onClick={onClose}
+          className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 transition-colors cursor-pointer"
+          aria-label="Close modal"
+        >
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+        {title && <h2 className="text-xl font-semibold mb-4 pr-8">{title}</h2>}
         <div>{children}</div>
       </div>
     </div>

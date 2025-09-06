@@ -1,4 +1,4 @@
-import { Calendar, Download, X } from "lucide-react";
+import { Calendar, Download,  } from "lucide-react";
 import { useState } from "react";
 import { Card, CardContent } from "../card";
 import Modal from "../modal";
@@ -23,13 +23,6 @@ export default function Certificate({ isOpen, onClose }: CertificateProps) {
             Here you can see your awarded certificate. You can view or download
             it.
           </p>
-        </div>
-
-        <div className="flex justify-end">
-          <X
-            className="cursor-pointer text-gray-500 hover:text-gray-800"
-            onClick={onClose}
-          />
         </div>
       </div>
       {!hasCertificate ? (

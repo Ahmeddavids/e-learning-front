@@ -56,15 +56,15 @@ export default function Profile() {
         <div className="flex w-full gap-4 justify-end ">
           <Button
             type="submit"
-            className="w-1/4 bg-[#FB8500] hover:bg-[#fcd1b3] hover:text-[#FB8500] text-white p-3 rounded-md"
-          >
-            Save
-          </Button>
-          <Button
-            type="submit"
             className="w-1/4 bg-[#FFE8D7] hover:bg-[#FB8500] text-[#FB8500] hover:text-white p-3 rounded-md"
           >
             Cancel
+          </Button>
+          <Button
+            type="submit"
+            className="w-1/4 bg-[#FB8500] hover:bg-[#fcd1b3] hover:text-[#FB8500] text-white p-3 rounded-md"
+          >
+            Save
           </Button>
         </div>
       </div>
