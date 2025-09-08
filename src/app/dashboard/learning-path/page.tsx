@@ -21,11 +21,11 @@ const LearningPath = () => {
       <div className="bg-[#F9F9F9] rounded-lg w-full h-40 flex  p-6  justify-between">
         <div className="flex space-y-2 flex-col">
           <h2 className="font-bold text-xl">Product Design</h2>
-          <span className="text-gray-600">
+          <span className="text-gray-600 text-sm">
             Welcome to this certificate program, this program will fast track
             your career in becoming a product designer.
           </span>
-          <div className="flex items-center space-x-4 mt-8">
+          <div className="flex items-center space-x-4 lg:mt-8">
             <div className="w-44 bg-[#FFE8D7] rounded-full h-2 flex items-center space-x-4">
               <div
                 className="bg-[#FB8500] h-2 rounded-full"
@@ -45,7 +45,9 @@ const LearningPath = () => {
           />
         </div>
       </div>
-      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+
+      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4  justify-items-center ">
         {displayData.map((path, idx) => (
           <Card key={idx} className="w-[360px] h-40 ">
             <CardHeader className="p-3">

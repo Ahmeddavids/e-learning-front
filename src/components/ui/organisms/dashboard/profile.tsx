@@ -46,7 +46,7 @@ export default function Profile() {
               height={badge.height}
               src={badge.src}
               alt={badge.alt}
-              className="w-24 h-24"
+              className="w-12 h-12 lg:w-24 lg:h-24"
             />
           ))}
         </div>
