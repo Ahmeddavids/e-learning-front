@@ -28,7 +28,7 @@ const Sidebar: React.FC<SidebarProps> = ({
         <>
             {isOpen && (
                 <div
-                    className="fixed inset-0 bg-gray-600 bg-opacity-50 z-20 lg:hidden"
+                    className="fixed inset-0 bg-gray-600 opacity-50 z-20 lg:hidden"
                     onClick={handleOverlayClick}
                     aria-hidden="true"
                 />
