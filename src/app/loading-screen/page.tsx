@@ -36,8 +36,8 @@ export default function LoadingScreen() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-white">
       <div className="flex flex-col items-center">
-        <div className="animate-spin-slow mb-6">
-          <Image src="/loader.png" alt="The Curve Logo" width={80} height={80} />
+        <div className="mb-6">
+          <Image src="/loader.gif" alt="The Curve Logo" width={80} height={80} />
         </div>
 
         <p className="text-gray-600 mt-4">
